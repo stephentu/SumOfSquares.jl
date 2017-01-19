@@ -1,13 +1,15 @@
 using MultivariatePolynomials
 using JuMP
 using SumOfSquares
-using PolyJuMP
-using FactCheck
+using Base.Test
 
 include("solvers.jl")
 
-include("certificate.jl")
 include("constraint.jl")
+
+using PolyJuMP
+
+include("certificate.jl")
 
 include("motzkin.jl")
 
@@ -20,5 +22,3 @@ include("sosdemo5.jl")
 include("sosdemo6.jl")
 include("domain.jl")
 include("sosmatrix.jl")
-
-FactCheck.exitstatus()

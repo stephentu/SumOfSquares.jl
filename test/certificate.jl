@@ -1,10 +1,10 @@
-facts("Monomial selection for certificate") do
+@testset "Monomial selection for certificate" begin
     @polyvar x y
     @fact_throws ErrorException getmonomialsforcertificate([x*y, y^2], :Sparse)
     @fact getmonomialsforcertificate([x*y, y^2]) --> MonomialVector([y])
 end
 
-facts("Random SOS should be SOS") do
+@testset "Random SOS should be SOS" begin
     for solver in sdp_solvers
         context("With solver $(typeof(solver))") do
             @polyvar x y
