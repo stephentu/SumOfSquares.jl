@@ -7,8 +7,9 @@
 
 **Important note**: The most recently tagged version of this package works with
 most recently tagged version of [JuMP](https://github.com/JuliaOpt/JuMP.jl),
-i.e. JuMP v0.18.x. The
-in-development version of this package works with the in-development version of
+i.e. JuMP v0.18.x (For Julia v1.0 support, use branch release-0.2 of this
+package and branch release-0.18 of JuMP). The in-development version of this
+package works with the in-development version of
 [JuMP](https://github.com/JuliaOpt/JuMP.jl), i.e. JuMP 0.19-.
 
 This packages contains the Sum of Squares reformulation for polynomial optimization.
